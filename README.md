@@ -14,7 +14,8 @@ can be reported [here](https://github.com/threatagent/community/issues).
 This ensures a quick work flow where communication will be simpler.
 
 Currently the ThreatAgent community repo contains: 
-* [Phishing Templates](templates/phishing)
+* [Phishing Templates](phishing/templates)
+* [API examples and documentation](api)
 
 ## Contributing
 Contributions are both welcomed and encouraged as they can only help
