@@ -1,4 +1,9 @@
 # ThreatAgent Community Repository
+
+Currently the ThreatAgent community repo contains: 
+* [Phishing Templates](phishing/templates)
+* [API examples and documentation](api)
+
 ## Purpose
 This repository serves as a place to put any open-sourced software under
 ThreatAgent that doesn't really stand as it's own tool but is none the
@@ -12,10 +17,6 @@ the repo is fair game.
 In addition any issues with [ThreatAgent Drone](https://www.threatagent.com)
 can be reported [here](https://github.com/threatagent/community/issues).
 This ensures a quick work flow where communication will be simpler.
-
-Currently the ThreatAgent community repo contains: 
-* [Phishing Templates](phishing/templates)
-* [API examples and documentation](api)
 
 ## Contributing
 Contributions are both welcomed and encouraged as they can only help
