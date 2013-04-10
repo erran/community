@@ -1,5 +1,9 @@
 #! /usr/bin/env ruby
-# ThreatAgent Phishing template example usage
+
+# This file is an example usage of mustache templates for phishing.
+#
+# ThreatAgent.com handles the templates in a similar matter.
+# When contributing a template to threatagent/community test against it with this file.
 
 # If mustache isn't installed install it.
 begin
