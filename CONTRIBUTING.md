@@ -2,7 +2,7 @@
 This file is a general contribution guidelines for the community repo.
 For more specific information check out a folder's specific
 contribution guidelines.
-* [Phishing Templates](templates/phishing/CONTRIBUTING.md)
+* [Phishing Templates](phishing/templates/CONTRIBUTING.md)
 
 As a rule of thumb make sure anything you try to contribute is your own
 work or work that's been open sourced.
