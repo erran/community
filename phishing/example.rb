@@ -60,5 +60,4 @@ end
 rendered = Mustache.render(@content, variables)
 $stdout.puts "Rendered template:"
 $stdout.puts '==='
-$stdout.puts rendered
-$stdout.puts
+$stdout.puts "#{rendered}\n"
