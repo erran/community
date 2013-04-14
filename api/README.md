@@ -8,15 +8,27 @@ The ThreatAgent API includes the following calls:
 * The [ThreatAgent iOS app](https://github.com/ipwnstuff/threatagent-ios)
 
 ## API calls:
+Every call expects a key parameter to me passed in. API calls work by passing parameters in like this:
+```
+# Get information on your ThreatAgentaccount
+curl https://threatagent.com/api/v1/info?key=32alphanumapikeyyekipamunahpla23
+# Launch a Drone mission against Acme(acme.co)
+curl https://threatagent.com/api/v1/drone/launch?key=32alphanumapikeyyekipamunahpla23&company=Acme&domain=acme.co
+```
+
+Utility API calls:
 * `GET /api/v1/info`
-* `GET /api/v1/drone/launch`
-* `GET /api/v1/drone/status`
-* `GET /api/v1/drone/results`
+
+Drone API calls:
+* `GET /api/v1/drone/launch` - requires 'company' and 'domain' as parameters.
+* `GET /api/v1/drone/status` - can accept 'company' and/or 'domain' as parameters.
+* `GET /api/v1/drone/results` - requires 'company' and/or 'domain' as parameters.
+
 
 In the case of an error you'll receive a response like the following:
 ```json
 {
-    "error": "This is a descriptive error."
+    "error": "A descriptive error message."
 }
 ```
 
