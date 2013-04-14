@@ -1,6 +1,6 @@
 # ThreatAgent API
 For advanced usage see the API wiki
-[page](https://github.com/threatagent/community/wiki/api).
+[page](https://github.com/threatagent/community/wiki/ThreatAgent-JSON-API).
 The ThreatAgent API includes the following calls:
 
 ## API clients:
@@ -9,9 +9,9 @@ The ThreatAgent API includes the following calls:
 
 ## API calls:
 * `GET /api/v1/info`
-* `GET /api/v1/drone/results`
-* `GET /api/v1/drone/status`
 * `GET /api/v1/drone/launch`
+* `GET /api/v1/drone/status`
+* `GET /api/v1/drone/results`
 
 In the case of an error you'll receive a response like the following:
 ```json
