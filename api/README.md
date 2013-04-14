@@ -49,8 +49,8 @@ In the case of an error you'll receive a response like the following:
 ```json
 [
     {
-        "company": "Qualys",
-        "domain": "qualys.com",
+        "company": "Acme",
+        "domain": "acme.com",
         "status": "Done",
         "created_at": "2013-04-12T03:33:04Z",
         "updated_at": "2013-04-12T03:34:47Z"
