@@ -9,15 +9,18 @@ The ThreatAgent API includes the following calls:
 
 ## API calls:
 * `GET /api/v1/info`
-* `GET /api/v1/drone_launch`
-* `GET /api/v1/drone_results`
+* `GET /api/v1/drone/results`
+* `GET /api/v1/drone/status`
+* `GET /api/v1/drone/launch`
 
-All of the API calls return JSON like to the following on failure/error:
+In the case of an error you'll receive a response like the following:
 ```json
 {
-    "error": "Invalid domain name."
+    "error": "This is a descriptive error."
 }
 ```
+
+---
 
 `GET /api/v1/info`:
 ```json
@@ -35,16 +38,27 @@ All of the API calls return JSON like to the following on failure/error:
 }
 ```
 
-`GET /api/v1/drone_launch`:
-Success:
-
+`GET /api/v1/drone/launch`:
 ```json
 {
-    "status": "Success!"
+    "status": "Queued"
 }
 ```
 
-`GET /api/v1/drone_results`:
+`GET /api/v1/status`:
+```json
+[
+    {
+        "company": "Qualys",
+        "domain": "qualys.com",
+        "status": "Done",
+        "created_at": "2013-04-12T03:33:04Z",
+        "updated_at": "2013-04-12T03:34:47Z"
+    }
+]
+```
+
+`GET /api/v1/drone/results`:
 ```json
 [
     {
